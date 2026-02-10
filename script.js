@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Load Projects from JSON
 async function loadProjects() {
     try {
-        const response = await fetch('projects.json');
+        const response = await fetch('data/projects.json');
         const data = await response.json();
         const projectsGrid = document.getElementById('projects-grid');
         
@@ -66,7 +66,7 @@ async function loadProjects() {
 // Load Blog Posts from JSON
 async function loadPosts() {
     try {
-        const response = await fetch('posts.json');
+        const response = await fetch('data/posts.json');
         const posts = await response.json();
         const postsGrid = document.getElementById('posts-grid');
         
