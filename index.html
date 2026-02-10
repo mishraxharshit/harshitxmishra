@@ -3,49 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshit Mishra</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <title>Harshit Mishra — Research & Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&family=Crimson+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <a href="index.html" class="logo">Harshit.</a>
-            <nav>
-                <a href="projects.html">Work</a>
-                <a href="blog.html">Writing</a>
-                <a href="about.html">About</a>
-            </nav>
-        </header>
-
-        <section class="hero">
-            <h1>Building meaningful digital products with clarity and purpose.</h1>
-            <p>
-                Hello, I'm Harshit Mishra. I am a Researcher and Minimalist Designer based in India. 
-                I focus on simplifying complex systems and teaching the philosophy of open science.
-            </p>
-        </section>
-
-        <span class="section-title">Featured</span>
-        <div class="grid">
-            <a href="#" class="card">
-                <h3>Project Zenith</h3>
-                <p>A minimalist task management system designed for deep work and focus.</p>
-                <span class="tag">Product Design</span>
-            </a>
-            <a href="#" class="card">
-                <h3>The Quiet Web</h3>
-                <p>Research paper on reducing cognitive load in modern application design.</p>
-                <span class="tag">Research</span>
+    <div class="grain-overlay"></div>
+    
+    <nav class="main-nav">
+        <div class="nav-left">
+            <a href="index.html" class="logo">HM</a>
+        </div>
+        <div class="nav-right">
+            <a href="#work">Work</a>
+            <a href="#research">Research</a>
+            <a href="#captures">Captures</a>
+            <a href="https://github.com/mishraxharshit/portfolio/wiki" target="_blank" class="wiki-link">
+                Wiki <span class="external-icon">↗</span>
             </a>
         </div>
+    </nav>
 
-        <footer>
-            <span>© 2026 Harshit Mishra</span>
-            <div class="socials">
-                <a href="#">Twitter</a>
-                <a href="#">GitHub</a>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <h1 class="fade-in">
+                        <span class="line">Harshit</span>
+                        <span class="line">Mishra</span>
+                    </h1>
+                    <div class="hero-meta fade-in-delay-1">
+                        <p class="monospace">Developer / Researcher / Explorer</p>
+                        <p class="location">Based in Indore, India</p>
+                    </div>
+                </div>
+                <div class="hero-description fade-in-delay-2">
+                    <p>
+                        This is my brain home — a living document of things I'm learning, 
+                        building, and discovering. From code to wildlife, research to pixels.
+                    </p>
+                    <div class="status-indicator">
+                        <span class="pulse"></span>
+                        <span>Currently documenting</span>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </div>
+        </section>
+
+        <!-- Current Focus -->
+        <section class="current-focus fade-in-delay-3">
+            <div class="section-header">
+                <h2>Now</h2>
+                <span class="timestamp" id="current-date"></span>
+            </div>
+            <div class="focus-grid">
+                <div class="focus-card">
+                    <span class="focus-icon">💻</span>
+                    <h3>Engineering</h3>
+                    <p>Building scalable systems, exploring distributed computing patterns</p>
+                </div>
+                <div class="focus-card">
+                    <span class="focus-icon">🔬</span>
+                    <h3>Research</h3>
+                    <p>Diving deep into machine learning applications and data structures</p>
+                </div>
+                <div class="focus-card">
+                    <span class="focus-icon">📸</span>
+                    <h3>Wildlife Photography</h3>
+                    <p>Capturing nature's moments, documenting biodiversity</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="work">
+            <div class="section-header">
+                <h2>Selected Work</h2>
+                <a href="https://github.com/mishraxharshit" target="_blank" class="view-all">
+                    View all on GitHub →
+                </a>
+            </div>
+            <div id="projects-grid" class="projects-grid">
+                <!-- Dynamically loaded -->
+            </div>
+        </section>
+
+        <!-- Research & Writing -->
+        <section class="research-section" id="research">
+            <div class="section-header">
+                <h2>Documentation & Notes</h2>
+                <a href="https://github.com/mishraxharshit/portfolio/wiki" target="_blank" class="view-all">
+                    Full Wiki →
+                </a>
+            </div>
+            <div class="wiki-notice">
+                <p>
+                    📝 Long-form writing, research notes, and technical documentation 
+                    live in the <a href="https://github.com/mishraxharshit/portfolio/wiki" target="_blank">GitHub Wiki</a>.
+                    Quick thoughts and updates below.
+                </p>
+            </div>
+            <div id="posts-grid" class="posts-grid">
+                <!-- Dynamically loaded -->
+            </div>
+        </section>
+
+        <!-- Gallery Preview -->
+        <section class="gallery-section" id="captures">
+            <div class="section-header">
+                <h2>Recent Captures</h2>
+                <span class="subtitle">Wildlife & Travel</span>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="--delay: 0.1s">
+                    <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=800&q=80" 
+                         alt="Wildlife" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Wildlife — 2025</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="--delay: 0.2s">
+                    <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80" 
+                         alt="Landscape" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Landscape — 2025</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="--delay: 0.3s">
+                    <img src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?w=800&q=80" 
+                         alt="Nature" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Nature — 2025</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>© 2026 Harshit Mishra</p>
+                <p class="monospace">Built with curiosity</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/mishraxharshit" target="_blank" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/harshitmishra" target="_blank" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="mailto:contact@harshitmishra.dev" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,20 +1,37 @@
-[
+{
+  "projects": [
     {
-        "title": "Project Zenith",
-        "desc": "A minimalist task management system designed for deep work and focus.",
-        "tag": "Product Design",
-        "link": "#"
+      "title": "Project Alpha",
+      "description": "A revolutionary design system for the modern web.",
+      "tags": [
+        "Design",
+        "Web"
+      ],
+      "date": "2026-01-15",
+      "link": "#",
+      "color": "#00F2FF"
     },
     {
-        "title": "Clean Slate",
-        "desc": "An open-source library for creating calm, distraction-free web interfaces.",
-        "tag": "Development",
-        "link": "#"
+      "title": "Neon Dreams",
+      "description": "An interactive art installation using LED and sound.",
+      "tags": [
+        "Art",
+        "Installation"
+      ],
+      "date": "2025-11-20",
+      "link": "#",
+      "color": "#FF0055"
     },
     {
-        "title": "The Quiet Web",
-        "desc": "Research paper on reducing cognitive load in modern application design.",
-        "tag": "Research",
-        "link": "#"
+      "title": "Brutalist Blog",
+      "description": "A blog about the intersection of brutalism and digital culture.",
+      "tags": [
+        "Writing",
+        "Culture"
+      ],
+      "date": "2025-09-10",
+      "link": "#",
+      "color": "#00FF88"
     }
-]
+  ]
+}
