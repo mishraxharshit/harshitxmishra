@@ -300,10 +300,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (portal) {
         portal.addEventListener('mouseenter', () => {
-            nodeText.textContent = "EXTRACTING_METADATA...";
+            nodeText.textContent = "EXTRACTING METADATA...";
         });
         portal.addEventListener('mouseleave', () => {
-            nodeText.textContent = "AI_LINK_ESTABLISHED";
+            nodeText.textContent = "ONE999";
         });
     }
 });
