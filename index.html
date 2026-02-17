@@ -13,19 +13,32 @@
     
     <div class="grain-overlay"></div>
     
+    <!-- MOBILE-FIRST NAV with Hamburger -->
     <nav class="main-nav">
         <div class="nav-left">
             <a href="index.html" class="logo">HM</a>
         </div>
-        <div class="nav-right">
-            <a href="#work">Work</a>
-            <a href="#research">Research</a>
-            <a href="#captures">Captures</a>
-            <a href="learn.html">Learn</a>
-            <a href="https://github.com/mishraxharshit/harshitxmishra.github.io/wiki" target="_blank" class="wiki-link">
-                Wiki <span class="external-icon">↗</span>
+
+        <!-- Hamburger Button (mobile only) -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="nav-right" id="nav-menu">
+            <a href="#work" class="nav-link">Work</a>
+            <a href="#research" class="nav-link">Research</a>
+            <a href="#captures" class="nav-link">Captures</a>
+            <a href="learn.html" class="nav-link">Learn</a>
+            <a href="https://github.com/mishraxharshit/harshitxmishra.github.io/wiki" target="_blank" class="wiki-link nav-link">
+                Wiki <span class="external-icon">&#x2197;</span>
             </a>
         </div>
+
+        <!-- Mobile overlay -->
+        <div class="nav-overlay" id="nav-overlay"></div>
     </nav>
 
     <main>
@@ -38,50 +51,43 @@
                         <span class="line">Mishra</span>
                     </h1>
                     <div class="hero-meta fade-in-delay-1">
-    <p class="monospace">
-        Applied Research Scientist
-    </p>
-    
-    <div class="location">
-        <span class="pulse-dot"></span>
-        <span>Based in <span class="location-swap"></span></span>
-    </div>
-
-    <div class="quote-container">
-        <p class="cooley-quote">
-            “I am not what I think I am and I am not what you think I am. <br>
-            I am what I think you think I am.”
-        </p>
-        <span class="quote-author">~ Charles Cooley</span>
-    </div>
-</div>
-                    
+                        <p class="monospace">Applied Research Scientist</p>
+                        <div class="location">
+                            <span class="pulse-dot"></span>
+                            <span>Based in <span class="location-swap"></span></span>
+                        </div>
+                        <div class="quote-container">
+                            <p class="cooley-quote">
+                                "I am not what I think I am and I am not what you think I am.
+                                I am what I think you think I am."
+                            </p>
+                            <span class="quote-author">~ Charles Cooley</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="hero-visual fade-in-delay-3">
-    <div class="ai-avatar-portal">
-        <div class="portal-ring"></div>
-        
-        <div class="image-wrapper">
-            <img src="myself.png" alt="Harshit Mishra" class="blended-pixel-art">
-        </div>
 
-        <div class="scan-horizontal"></div>
-        <div class="data-node">
-            <span class="node-pulse"></span>
-            <span id="node-text">ONE999</span>
-        </div>
-        <div class="ai-status-badge">
-            <span class="pulse-small"></span>
-            <span id="status-text">SYSTEM ACTIVE</span>
-        </div>
-        
-    </div>
-    <div class="insight-card" id="vision-insight">
-        <div class="card-glow"></div>
-        <p class="monospace">SCANNING...</p>
-        <p class="insight-data">Pattern: Explorer. Vision: 0/1.</p>
-    </div>
-</div>
+                <div class="hero-visual fade-in-delay-3">
+                    <div class="ai-avatar-portal">
+                        <div class="portal-ring"></div>
+                        <div class="image-wrapper">
+                            <img src="myself.png" alt="Harshit Mishra" class="blended-pixel-art">
+                        </div>
+                        <div class="scan-horizontal"></div>
+                        <div class="data-node">
+                            <span class="node-pulse"></span>
+                            <span id="node-text">ONE999</span>
+                        </div>
+                        <div class="ai-status-badge">
+                            <span class="pulse-small"></span>
+                            <span id="status-text">SYSTEM ACTIVE</span>
+                        </div>
+                    </div>
+                    <div class="insight-card" id="vision-insight">
+                        <p class="monospace">SCANNING...</p>
+                        <p class="insight-data">Pattern: Explorer. Vision: 0/1.</p>
+                    </div>
+                </div>
+
                 <div class="hero-description fade-in-delay-2">
                     <p>
                         This is my brain home, a living document of things I'm learning, 
@@ -94,127 +100,106 @@
                 </div>
             </div>
         </section>
-<section class="journey-section fade-in-delay-3" id="journey">
-    <div class="section-header-mature">
-        <div class="header-content">
-            <span class="system-status-pill">Trace Origin: 1999</span>
-            <h2>Cognitive Evolution</h2>
-        </div>
-        <div class="header-metadata">
-            <span class="monospace">Pattern: Collection Of Experience</span>
-        </div>
-    </div>
 
-    <div class="journey-container">
-        <div class="main-timeline-line"></div>
-        
-        <div class="journey-node-mature">
-            <div class="node-marker-outer"><div class="node-marker-inner"></div></div>
-            <div class="node-content-box">
-                <span class="node-year monospace">Oct 1999</span>
-                <h3>System Initialization</h3>
-                <p>The journey began. Birth: the first data point in a vast cognitive pattern.</p>
+        <!-- Cognitive Evolution Timeline -->
+        <section class="journey-section fade-in-delay-3" id="journey">
+            <div class="section-header-mature">
+                <div class="header-content">
+                    <span class="system-status-pill">Trace Origin: 1999</span>
+                    <h2>Cognitive Evolution</h2>
+                </div>
+                <div class="header-metadata">
+                    <span class="monospace">Pattern: Collection Of Experience</span>
+                </div>
             </div>
-        </div>
 
-        <div class="journey-node-mature">
-            <div class="node-marker-outer"><div class="node-marker-inner"></div></div>
-            <div class="node-content-box">
-                <span class="node-year monospace">2005 - 2017</span>
-                <h3>Structured Learning (Schooling)</h3>
-                <p>Developing basic neural patterns. Academic challenges and the first realization that 'life is a series of experiences'.</p>
+            <div class="journey-container">
+                <div class="main-timeline-line"></div>
+                <div class="journey-node-mature">
+                    <div class="node-marker-outer"><div class="node-marker-inner"></div></div>
+                    <div class="node-content-box">
+                        <span class="node-year monospace">Oct 1999</span>
+                        <h3>System Initialization</h3>
+                        <p>The journey began. Birth: the first data point in a vast cognitive pattern.</p>
+                    </div>
+                </div>
+                <div class="journey-node-mature">
+                    <div class="node-marker-outer"><div class="node-marker-inner"></div></div>
+                    <div class="node-content-box">
+                        <span class="node-year monospace">2005 - 2017</span>
+                        <h3>Structured Learning (Schooling)</h3>
+                        <p>Developing basic neural patterns. Academic challenges and the first realization that 'life is a series of experiences'.</p>
+                    </div>
+                </div>
+                <div class="journey-node-mature">
+                    <div class="node-marker-outer"><div class="node-marker-inner"></div></div>
+                    <div class="node-content-box">
+                        <span class="node-year monospace">2018 - 2023</span>
+                        <h3>Cognitive Expansion</h3>
+                        <p>Entering Engineering. Exploring 0 and 1. Trials, failures, and successes.</p>
+                    </div>
+                </div>
+                <div class="journey-node-mature active-node">
+                    <div class="node-marker-outer"><div class="node-marker-inner"></div></div>
+                    <div class="node-content-box">
+                        <span class="node-year monospace">2024 - 2026</span>
+                        <h3>The Explorer's State</h3>
+                        <p>Current state: Continuous learning. Celebrating small joys while embracing the uncertainty of what 'He' has planned next.</p>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="journey-node-mature">
-            <div class="node-marker-outer"><div class="node-marker-inner"></div></div>
-            <div class="node-content-box">
-                <span class="node-year monospace">2018 - 2023</span>
-                <h3>Cognitive Expansion</h3>
-                <p>Entering Engineering. Exploring 0 and 1. Trials, failures, and successes. Understanding that every role we play is a lesson.</p>
+            <div class="philosophical-note">
+                <p class="monospace">If you want to find the secrets of the Universe, think in terms of energy, frequency and vibration</p>
+                <p class="monospace">~ Nikola Tesla</p>
             </div>
-        </div>
+        </section>
 
-        <div class="journey-node-mature active-node">
-            <div class="node-marker-outer"><div class="node-marker-inner"></div></div>
-            <div class="node-content-box">
-                <span class="node-year monospace">2024 - 2026</span>
-                <h3>The Explorer's State</h3>
-                <p>Current state: Continuous learning. Celebrating small joys while embracing the uncertainty of what 'He' has planned next.</p>
+        <!-- Core Focus -->
+        <section class="current-focus fade-in-delay-3">
+            <div class="section-header-mature">
+                <div class="header-content">
+                    <span class="system-status-pill">System Active</span>
+                    <h2>Core Focus</h2>
+                </div>
+                <div class="header-metadata">
+                    <span class="monospace" id="current-date"></span>
+                </div>
             </div>
-        </div>
-    </div>
+            <div class="focus-grid-mature">
+                <div class="focus-card-logic">
+                    <div class="card-header"><span class="card-index">01</span><div class="activity-dot"></div></div>
+                    <div class="card-body">
+                        <h3 class="monospace">System Engineering</h3>
+                        <p>Architecting scalable distributed systems with a focus on low-latency communication and modular infrastructure.</p>
+                    </div>
+                    <div class="card-footer"><span class="tag">Backend</span><span class="tag">Scalability</span></div>
+                </div>
+                <div class="focus-card-logic">
+                    <div class="card-header"><span class="card-index">02</span><div class="activity-dot"></div></div>
+                    <div class="card-body">
+                        <h3 class="monospace">Neural Research</h3>
+                        <p>Investigating machine learning optimization patterns, specifically around data structure efficiency and model transparency.</p>
+                    </div>
+                    <div class="card-footer"><span class="tag">AI/ML</span><span class="tag">Docs</span></div>
+                </div>
+                <div class="focus-card-logic">
+                    <div class="card-header"><span class="card-index">03</span><div class="activity-dot"></div></div>
+                    <div class="card-body">
+                        <h3 class="monospace">Visual Documentation</h3>
+                        <p>Conducting longitudinal environmental studies through high-fidelity wildlife photography and habitat analysis.</p>
+                    </div>
+                    <div class="card-footer"><span class="tag">Biosphere</span><span class="tag">Archival</span></div>
+                </div>
+            </div>
+        </section>
 
-    <div class="philosophical-note">
-        <p class="monospace">If you want to find the secrets of the Universe, think in terms of energy, frequency and vibration</p>
-        <p class="monospace">~ Nikola Tesla</p>
-    </div>
-</section>
-<section class="current-focus fade-in-delay-3">
-    <div class="section-header-mature">
-        <div class="header-content">
-            <span class="system-status-pill">System Active</span>
-            <h2>Core Focus</h2>
-        </div>
-        <div class="header-metadata">
-            <span class="monospace" id="current-date"></span>
-        </div>
-    </div>
-
-    <div class="focus-grid-mature">
-        <div class="focus-card-logic">
-            <div class="card-header">
-                <span class="card-index">01</span>
-                <div class="activity-dot"></div>
-            </div>
-            <div class="card-body">
-                <h3 class="monospace">System Engineering</h3>
-                <p>Architecting scalable distributed systems with a focus on low-latency communication and modular infrastructure.</p>
-            </div>
-            <div class="card-footer">
-                <span class="tag">Backend</span>
-                <span class="tag">Scalability</span>
-            </div>
-        </div>
-
-        <div class="focus-card-logic">
-            <div class="card-header">
-                <span class="card-index">02</span>
-                <div class="activity-dot"></div>
-            </div>
-            <div class="card-body">
-                <h3 class="monospace">Neural Research</h3>
-                <p>Investigating machine learning optimization patterns, specifically around data structure efficiency and model transparency.</p>
-            </div>
-            <div class="card-footer">
-                <span class="tag">AI/ML</span>
-                <span class="tag">Docs</span>
-            </div>
-        </div>
-
-        <div class="focus-card-logic">
-            <div class="card-header">
-                <span class="card-index">03</span>
-                <div class="activity-dot"></div>
-            </div>
-            <div class="card-body">
-                <h3 class="monospace">Visual Documentation</h3>
-                <p>Conducting longitudinal environmental studies through high-fidelity wildlife photography and habitat analysis.</p>
-            </div>
-            <div class="card-footer">
-                <span class="tag">Biosphere</span>
-                <span class="tag">Archival</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="ai-section" id="ai-lab">
+        <!-- AI Co-Lab -->
+        <section class="ai-section" id="ai-lab">
             <div class="section-header">
                 <h2>AI Co-Laboratory</h2>
                 <span class="timestamp">Powered by Gemini</span>
             </div>
-            
             <div class="ai-container">
                 <div class="ai-controls">
                     <p class="monospace" style="margin-bottom: 1rem; color: var(--color-secondary);">Select a protocol:</p>
@@ -224,7 +209,6 @@
                         <button class="ai-btn" data-mode="optimize">System Optimization</button>
                     </div>
                 </div>
-
                 <div class="ai-terminal">
                     <div class="terminal-header">
                         <span class="dot red"></span>
@@ -239,195 +223,167 @@
                 </div>
             </div>
         </section>
-        <!-- Projects Section -->
+
+        <!-- Projects -->
         <section class="projects-section" id="work">
             <div class="section-header">
                 <h2>Selected Work</h2>
-                <a href="https://github.com/mishraxharshit" target="_blank" class="view-all">
-                    View all on GitHub →
-                </a>
+                <a href="https://github.com/mishraxharshit" target="_blank" class="view-all">GitHub &#x2192;</a>
             </div>
-            <div id="projects-grid" class="projects-grid">
-                <!-- Dynamically loaded -->
-            </div>
+            <div id="projects-grid" class="projects-grid"></div>
         </section>
 
-        <!-- Research & Writing -->
+        <!-- Research -->
         <section class="research-section" id="research">
             <div class="section-header">
-                <h2>Documentation & Notes</h2>
-                <a href="https://github.com/mishraxharshit/portfolio/wiki" target="_blank" class="view-all">
-                    Full Wiki →
-                </a>
+                <h2>Documentation &amp; Notes</h2>
+                <a href="https://github.com/mishraxharshit/portfolio/wiki" target="_blank" class="view-all">Wiki &#x2192;</a>
             </div>
             <div class="wiki-notice">
                 <p>
-                    📝 Long-form writing, research notes, and technical documentation 
+                    &#x1F4DD; Long-form writing, research notes, and technical documentation 
                     live in the <a href="https://github.com/mishraxharshit/portfolio/wiki" target="_blank">GitHub Wiki</a>.
-                    Quick thoughts and updates below.
                 </p>
             </div>
-            <div id="posts-grid" class="posts-grid">
-                <!-- Dynamically loaded -->
+            <div id="posts-grid" class="posts-grid"></div>
+        </section>
+
+        <!-- Work Journey -->
+        <section class="journey-section fade-in-delay-3" id="work-journey">
+            <div class="section-header-mature">
+                <div class="header-content">
+                    <span class="system-status-pill">Trace_Path</span>
+                    <h2>Work Life Journey</h2>
+                </div>
+            </div>
+            <div class="journey-path">
+                <div class="journey-line"></div>
+                <div class="journey-node">
+                    <div class="node-marker"></div>
+                    <div class="node-info">
+                        <span class="node-date monospace">2022 - Initialization</span>
+                        <h3>The Learning Phase</h3>
+                        <p>Curiosity led to the first lines of code. Faced the challenge of understanding distributed systems.</p>
+                    </div>
+                </div>
+                <div class="journey-node">
+                    <div class="node-marker active"></div>
+                    <div class="node-info">
+                        <span class="node-date monospace">2024 - Integration</span>
+                        <h3>Real-World Challenges</h3>
+                        <p>Experiences in engineering scalable solutions. Learned that failure is just a debugging step.</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="journey-section fade-in-delay-3" id="journey">
-    <div class="section-header-mature">
-        <div class="header-content">
-            <span class="system-status-pill">Trace_Path</span>
-            <h2>Work Life Journey</h2>
-        </div>
-    </div>
-    <div class="journey-path">
-        <div class="journey-line"></div>
-        
-        <div class="journey-node">
-            <div class="node-marker"></div>
-            <div class="node-info">
-                <span class="node-date monospace">2022 - Initialization</span>
-                <h3>The Learning Phase</h3>
-                <p>Curiosity led to the first lines of code. Faced the challenge of understanding distributed systems. Everything was a cheerful experiment.</p>
-            </div>
-        </div>
 
-        <div class="journey-node">
-            <div class="node-marker active"></div>
-            <div class="node-info">
-                <span class="node-date monospace">2024 - Integration</span>
-                <h3>Real-World Challenges</h3>
-                <p>Experiences in engineering scalable solutions. Learned that failure is just a debugging step in the journey of growth.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="poetry-section fade-in-delay-3" id="ink">
-    <div class="section-header-mature">
-        <div class="header-content">
-            <span class="system-status-pill">Linguistic_Switch</span>
-            <h2>The Ink</h2>
-        </div>
-        <div class="lang-selector">
-            <button class="lang-btn active" data-lang="en">EN_MODE</button>
-            <span class="selector-divider">/</span>
-            <button class="lang-btn" data-lang="hi">HI_MODE</button>
-        </div>
-    </div>
-
-    <div class="poetry-display">
-        <div class="poetry-content active" id="poetry-en">
-            <blockquote class="quote-text">
-                "Logic will get you from A to B. Imagination will take you everywhere."
-            </blockquote>
-            <cite class="monospace">— Albert Einstein // Archive_Ref: 01</cite>
-        </div>
-
-        <div class="poetry-content" id="poetry-hi">
-            <blockquote class="quote-text hindi-font">
-                "सफ़र में धूप तो होगी जो चल सको तो चलो,<br>
-                सभी हैं भीड़ में तुम भी निकल सको तो चलो।"
-            </blockquote>
-            <cite class="monospace">— निदा फ़ाज़ली // Archive_Ref: 02</cite>
-        </div>
-    </div>
-</section>
-
-<section class="micro-blog-section fade-in-delay-3" id="field-notes">
-    <div class="section-header-mature">
-        <div class="header-content">
-            <span class="system-status-pill">Media_Archive</span>
-            <h2>Field Notes</h2>
-        </div>
-    </div>
-
-    <div class="blog-masonry">
-        <div class="note-card">
-            <div class="note-media">
-                <div class="media-placeholder" style="padding: 0; overflow: hidden;">
-                    <video src="01.mp4" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+        <!-- Poetry -->
+        <section class="poetry-section fade-in-delay-3" id="ink">
+            <div class="section-header-mature">
+                <div class="header-content">
+                    <span class="system-status-pill">Linguistic_Switch</span>
+                    <h2>The Ink</h2>
+                </div>
+                <div class="lang-selector">
+                    <button class="lang-btn active" data-lang="en">EN_MODE</button>
+                    <span class="selector-divider">/</span>
+                    <button class="lang-btn" data-lang="hi">HI_MODE</button>
                 </div>
             </div>
-            <div class="note-content">
-                <span class="monospace">Entry_042 // Visual</span>
-                <p>A short study on the movements of forest canopies during monsoon. High-fidelity capture.</p>
-            </div>
-        </div>
-
-        <div class="note-card">
-            <div class="note-audio">
-                <div class="audio-wave">
-                    <span></span><span></span><span></span><span></span><span></span>
+            <div class="poetry-display">
+                <div class="poetry-content active" id="poetry-en">
+                    <blockquote class="quote-text">
+                        "Logic will get you from A to B. Imagination will take you everywhere."
+                    </blockquote>
+                    <cite class="monospace">&#x2014; Albert Einstein // Archive_Ref: 01</cite>
                 </div>
-                <audio controls style="width: 100%; height: 30px; margin: 10px 0;">
-                    <source src="01.mp3" type="audio/mpeg">
-                    <source src="01.m4a" type="audio/mp4">
-                    Aapka browser audio support nahi karta.
-                </audio>
-                <span class="monospace">01.mp3</span>
+                <div class="poetry-content" id="poetry-hi">
+                    <blockquote class="quote-text hindi-font">
+                        "&#x938;&#x93C;&#x92B;&#x930;&#x93C; &#x92E;&#x947;&#x902; &#x927;&#x942;&#x92A; &#x924;&#x94B; &#x939;&#x94B;&#x917;&#x940; &#x91C;&#x94B; &#x91A;&#x932; &#x938;&#x915;&#x94B; &#x924;&#x94B; &#x91A;&#x932;&#x94B;,<br>
+                        &#x938;&#x092D;&#x93C;&#x940; &#x939;&#x948;&#x902; &#x092D;&#x93C;&#x940;&#x921;&#x93C; &#x092E;&#x947;&#x902; &#x924;&#x941;&#x092E; &#x092D;&#x93C;&#x940; &#x928;&#x093F;&#x0915;&#x0932; &#x0938;&#x0915;&#x094B; &#x0924;&#x094B; &#x091A;&#x0932;&#x094B;&#x0964;"
+                    </blockquote>
+                    <cite class="monospace">&#x2014; &#x928;&#x93F;&#x926;&#x93E; &#x092B;&#x93C;&#x93E;&#x091C;&#x93C;&#x932;&#x940; // Archive_Ref: 02</cite>
+                </div>
             </div>
-            <div class="note-content">
-                <span class="monospace">Entry_043 // Audio</span>
-                <p>Late night thoughts on system architecture and the rhythm of clean code.</p>
+        </section>
+
+        <!-- Field Notes -->
+        <section class="micro-blog-section fade-in-delay-3" id="field-notes">
+            <div class="section-header-mature">
+                <div class="header-content">
+                    <span class="system-status-pill">Media_Archive</span>
+                    <h2>Field Notes</h2>
+                </div>
             </div>
-        </div>
-    </div> </section>
-        <!-- Gallery Preview -->
+            <div class="blog-masonry">
+                <div class="note-card">
+                    <div class="note-media">
+                        <div class="media-placeholder" style="padding:0;overflow:hidden;">
+                            <video src="01.mp4" autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;display:block;"></video>
+                        </div>
+                    </div>
+                    <div class="note-content">
+                        <span class="monospace">Entry_042 // Visual</span>
+                        <p>A short study on the movements of forest canopies during monsoon. High-fidelity capture.</p>
+                    </div>
+                </div>
+                <div class="note-card">
+                    <div class="note-audio">
+                        <div class="audio-wave">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                        <audio controls style="width:100%;margin:10px 0;">
+                            <source src="01.mp3" type="audio/mpeg">
+                            <source src="01.m4a" type="audio/mp4">
+                        </audio>
+                        <span class="monospace">01.mp3</span>
+                    </div>
+                    <div class="note-content">
+                        <span class="monospace">Entry_043 // Audio</span>
+                        <p>Late night thoughts on system architecture and the rhythm of clean code.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
         <section class="gallery-section" id="captures">
             <div class="section-header">
                 <h2>Recent Captures</h2>
-                <span class="subtitle">Wildlife & Travel</span>
+                <span class="subtitle">Wildlife &amp; Travel</span>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item" style="--delay: 0.1s">
-                    <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=800&q=80" 
-                         alt="Wildlife" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span>Wildlife — 2025</span>
-                    </div>
+                <div class="gallery-item" style="--delay:0.1s">
+                    <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=800&q=80" alt="Wildlife" loading="lazy">
+                    <div class="gallery-overlay"><span>Wildlife &#x2014; 2025</span></div>
                 </div>
-                <div class="gallery-item" style="--delay: 0.2s">
-                    <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80" 
-                         alt="Landscape" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span>Landscape — 2025</span>
-                    </div>
+                <div class="gallery-item" style="--delay:0.2s">
+                    <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80" alt="Landscape" loading="lazy">
+                    <div class="gallery-overlay"><span>Landscape &#x2014; 2025</span></div>
                 </div>
-                <div class="gallery-item" style="--delay: 0.3s">
-                    <img src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?w=800&q=80" 
-                         alt="Nature" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span>Nature — 2025</span>
-                    </div>
+                <div class="gallery-item" style="--delay:0.3s">
+                    <img src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?w=800&q=80" alt="Nature" loading="lazy">
+                    <div class="gallery-overlay"><span>Nature &#x2014; 2025</span></div>
                 </div>
             </div>
         </section>
-
-        
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-left">
-                <p>© 2026 Harshit Mishra</p>
-                <p class="monospace">𓅰 𓅬 𓅭 𓅮 𓅯</p>
+                <p>&#xa9; 2026 Harshit Mishra</p>
+                <p class="monospace">&#x131E;&#x131C; &#x131D; &#x131E; &#x131F;</p>
             </div>
             <div class="footer-links">
                 <a href="https://github.com/mishraxharshit" target="_blank" aria-label="GitHub">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                 </a>
                 <a href="https://linkedin.com/in/harshitxmishra" target="_blank" aria-label="LinkedIn">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </a>
-                <a href="/cdn-cgi/l/email-protection#e5868a8b91848691a58d8497968d8c91888c968d9784cb818093" aria-label="Email">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
+                <a href="mailto:contact@harshitmishra.com" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 </a>
             </div>
         </div>

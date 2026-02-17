@@ -1,4 +1,51 @@
-// Set current date
+// ==========================================
+// MOBILE HAMBURGER MENU
+// ==========================================
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    const navOverlay = document.getElementById('nav-overlay');
+    const navClose = document.getElementById('nav-close');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    function openMenu() {
+        hamburger.classList.add('open');
+        hamburger.setAttribute('aria-expanded', 'true');
+        navMenu.classList.add('open');
+        navOverlay.classList.add('visible');
+        navOverlay.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        navMenu.classList.remove('open');
+        navOverlay.classList.remove('visible');
+        setTimeout(() => { navOverlay.style.display = ''; }, 300);
+        document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', () => {
+        navMenu.classList.contains('open') ? closeMenu() : openMenu();
+    });
+    if (navClose) navClose.addEventListener('click', closeMenu);
+    if (navOverlay) navOverlay.addEventListener('click', closeMenu);
+
+    // Close on nav link click
+    navLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeMenu();
+    });
+});
+
+// ==========================================
+// SET CURRENT DATE
+// ==========================================
 document.addEventListener('DOMContentLoaded', function() {
     const dateElement = document.getElementById('current-date');
     if (dateElement) {
